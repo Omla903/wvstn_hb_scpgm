@@ -589,9 +589,9 @@
   <div class="briefing">
     <h2>Mission Briefing</h2>
     <p>It is February 14, 2030. An Atlantic storm has shaken our operations. Six tasks await you, each linked to a real situation in the Renewables and Batteries world.</p>
-    <p><strong>Use Copilot in Excel, Word, Outlook and on Mobile to find the codes.</strong></p>
+    <p><strong>Use Copilot to find the codes.</strong></p>
     <p style="font-size: 13px; color: var(--engie-grey-3); font-style: italic; margin-top: 12px;">
-      Each mission contains files to download and analyze with Copilot. Some require Copilot Mobile (camera-based analysis).
+      Each mission contains files to download. Some require Copilot Mobile (camera-based analysis).
     </p>
   </div>
 
@@ -616,7 +616,7 @@
       <div class="section-label">Scenario</div>
       <p>Yesterday, an Atlantic storm hit our plant. You have a spreadsheet with 200 rows comparing predicted vs actual production over 4 days. The dispatch desk needs one number for the insurer claim: how much production we lost during the storm itself.</p>
       <div class="section-label">Your job</div>
-      <p>Find the total amount of production we lost only during the storm window - not the forecast error overall. Hint: there is a context note at the bottom of the spreadsheet pointing to the storm date and time range.</p>
+      <p>Find the total production lost during the storm window only.</p>
       <div class="section-label">Code format</div>
       <p style="font-size: 13px; color: var(--engie-grey-3);"><em>3-digit number - quantity of lost megawatts.</em></p>
     </div>
@@ -648,7 +648,7 @@
       <div class="section-label">Scenario</div>
       <p>An industrial client is angry. They sent 14 emails complaining about a service gap and threaten legal action. At the end of the document, the actual contract we signed with them is included, with a specific clause that caps the unavailability we are allowed before penalties.</p>
       <div class="section-label">Your job</div>
-      <p>Find out how much margin (in time) we have left before the client can legitimately claim penalties. Be careful: the client uses force majeure language, but that may not be the right clause.</p>
+      <p>Find how much margin (in time) we have left before the client can claim penalties.</p>
       <div class="section-label">Code format</div>
       <p style="font-size: 13px; color: var(--engie-grey-3);"><em>3-digit number - duration in minutes.</em></p>
     </div>
@@ -680,9 +680,9 @@
       <div class="section-label">Scenario</div>
       <p>A 4-page incident report came in from our Spanish site overnight. A piece of equipment failed. Tomorrow at the 6 AM stand-up, management wants two facts: which main system failed, and how many critical warning signs were missed before the incident.</p>
       <div class="section-label">Your job</div>
-      <p>Identify the main system that failed (not a sub-component, the system itself), and count the number of critical warning events ignored before the incident.</p>
+      <p>Identify the main failed system and count the critical warning events ignored before the incident.</p>
       <div class="section-label">Code format</div>
-      <p style="font-size: 13px; color: var(--engie-grey-3);"><em>5 characters - acronym, dash, digit (e.g. XXX-N).</em></p>
+      <p style="font-size: 13px; color: var(--engie-grey-3);"><em>5 characters - the system's 3-letter acronym, then a dash, then a digit (e.g. ABC-N).</em></p>
     </div>
     <div class="files-section">
 <div class="files-label">Files to download</div>
@@ -712,7 +712,7 @@
       <div class="section-label">Scenario</div>
       <p>Market conditions changed overnight. You have a briefing with 4 news items. One contains the dispatch committee recommendation about bid hours tomorrow. Another tells you what our plant can actually produce. The trading desk needs the total volume we sell tomorrow.</p>
       <div class="section-label">Your job</div>
-      <p>Compute the total volume we plan to sell tomorrow in MWh, following the committee recommendation and using the capacity figures provided.</p>
+      <p>Compute the total volume we will sell tomorrow, in MWh.</p>
       <div class="section-label">Code format</div>
       <p style="font-size: 13px; color: var(--engie-grey-3);"><em>4-digit number - total energy volume.</em></p>
     </div>
@@ -744,7 +744,7 @@
       <div class="section-label">Scenario</div>
       <p>You are the Asset Manager. Tomorrow at 09:00, the Investment Committee reviews the BESS Toulouse extension project. The project team recommends GO. Your job is not to decide GO or NO-GO - that is the committee's call. Your job is to prepare the critical questions the committee should ask, and identify your number 1 priority question.</p>
       <div class="section-label">Your job</div>
-      <p>Synthesize the project deck, the email thread, and the project brief. Your top priority question must point to the most impactful external risk - and you must surface its precise reference in year-number format.</p>
+      <p>Identify the most impactful external risk and surface its precise reference.</p>
       <div class="section-label">Code format</div>
       <p style="font-size: 13px; color: var(--engie-grey-3);"><em>Format: YYYY-NN (year and number).</em></p>
     </div>
@@ -778,7 +778,7 @@
       <div class="section-label">Scenario</div>
       <p>You are visiting the Toulouse-East BESS site. You only have your work phone with Copilot Mobile installed. On site, two physical references are displayed: an equipment nameplate and a hand-annotated wiring schematic from the field technician. Something looks off and you need to confirm an electrical anomaly on the spot.</p>
       <div class="section-label">Your job</div>
-      <p>Walk to the booth, photograph each of the two A3 printouts (nameplate + schematic) with your phone, and use Copilot Mobile to detect the electrical anomaly. The code is the abnormal value you find.</p>
+      <p>Detect the electrical anomaly. The code is the abnormal value.</p>
       <div class="section-label">Code format</div>
       <p style="font-size: 13px; color: var(--engie-grey-3);"><em>4-digit number - voltage in volts.</em></p>
     </div>
